@@ -1,4 +1,7 @@
 .map{
+  align-items: center;
+}
 
-    background-color:rgb(133, 127, 127);
+.bacias path:hover{
+    fill: green;
 }
