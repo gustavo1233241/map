@@ -1,25 +1,28 @@
-let interuptor = true;
-
-function mapBacias (){
 
 var cardAcre = document.getElementById('Card_Acre')
 
+function mapBacias_Coloca (){
 
-if(interuptor){
 
-cardAcre.style.height = '20vh'
+
+
+
+cardAcre.style.height = '150px'
 cardAcre.style.display = 'block'
 
 
 
-interuptor = false
-}else{
+
+}
+
+function mapBacias_tira(){
 
 
-    cardAcre.style.height = '0vh'
+
+
     cardAcre.style.display = 'none'
     
     interuptor = true
-}
+
 
 }

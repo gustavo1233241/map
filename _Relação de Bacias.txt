@@ -8,63 +8,101 @@
 
 5.  Araripe
 
-6.  Bananal
+6.  Bananal 
 
-7.  Barreirinhas
+7.  Barreirinhas_Terra
 
-8.  Camamu
+8.  Barreirinhas
 
-9.  Campos
+9.  Bragança-Vizeu
 
-10. Cumuruxatiba
+10. Camamu
 
-11. Ceará
+11. Campos
 
-12. Espírito Santo
+12. Campos-Terra
 
-13. Foz do Amazonas
+13. Cumuruxatiba
 
-14. Itaboraí
+14. Ceará
 
-15. Jatobá
+15. Espírito Santo
 
-16. Jequitinhonha
+16. Espírito-Santo_Terra
 
-17. Marajó
+17. Foz do Amazonas
 
-18. Mucuri
+18. Itaboraí
 
-19. Pantanal
+19. Jatobá
 
-20. Pará-Marahão
+20. Jequitinhonha
 
-21. Paraná
+21. Jequitinhonha_Terra eu
 
-22. Parecis
+22. Marajó
 
-23. Parnaíba
+23. Mucuri
 
-24. Pelotas
+24. Pantanal
 
-25. Pernambuco-Paraíba
+25. Pará-Maranhão
 
-26. Potiguar
+26. Paraná
 
-27. Recôncavo
+27. Parecis
 
-28. Santos
+28. Parnaíba
 
-29. São-Francisco
+29. Pelotas
 
-30. São Luís-Grajaú
+30. Pernambuco-Paraíba
 
-31. Sergipe-Alagoas
+31. Pernambuco-Paraíba_Terra
 
-32. Solimões
+32. Potiguar
 
-33. Tacutu
+33. Potiguar_Terra
 
-34. Tucano
+34. Recôncavo
+
+35. Santos
+
+36. São-Francisco
+
+37. São-Luís
+
+38. São Luís-Grajaú
+
+39. Sergipe-Alagoas
+
+40. Sergipe-Alagoas_Terra
+
+41. Solimões
+
+42. Tacutu
+
+43. Taubaté
+
+44. Tucano
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -16,16 +16,17 @@
   height: 0vh;
   background-color: black;
   border-radius: 20px 20px 20px 20px;
-  transition: width 0.25s, height 0.20s;
+  transition: height 5s;
 }
 
 .AcreB {
-  transform: translate(0px, 100px);
-  width: 250px;
-  height: 45px;
+  transform: translate(0px, 141px);
+  width: 249px;
+  height: 48px;
   background-color:white;
   border-radius: 0px 0px 20px 20px;
-  box-shadow: 0px 0px 1px 0.3px;
+  box-shadow: 0px 0px 21px 1px;
+  transition: width 0.25s, height 0.20s;
  
 }
 h1{
@@ -34,3 +35,56 @@ font-size: large;
 font-family: 'Zen Kaku Gothic Antique';
 font-style: normal;
 }
+
+section.card {
+  width: 240px;
+  height: 120px;
+  background: #F6F9FF;
+  border-radius: 12px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  align-items: center;
+  text-align: center;
+
+}
+
+section.card #titulo_sugestao{
+  background: #178864;
+  height: 50px;
+  border-radius: 12px 12px 0 0;
+}
+
+section.card #titulo_sugestao img{
+  width: 35px;
+  height: 35px;
+  margin-top: 5px;
+}
+
+section.card #titulo_sugestao h2{
+  color: #F6F9FF;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  width: 140px;
+  height: 40px;
+  margin: 0 0 0 50px;
+}
+
+section.card #texto_sugestao p{
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  width: 180px;
+  justify-content: center;
+  padding: 0 20px 0 30px;
+}
+
+
+path .mapa_brasil{
+  fill: #E7E7E7;
+  stroke: white;
+  stroke-width: 1px;
+}
+
+path .bacia{
+  fill: none;
+  stroke-width: 1px;
+}
+
