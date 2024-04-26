@@ -1,4 +1,17 @@
+.acre:hover .acre2{
+display: block;
 
+}
+
+.dentro_map{
+
+  fill: #EBE7DF;
+}
+
+.fora_map{
+
+  fill: white;
+}
 .map {
   align-items: center;
 }
@@ -7,7 +20,7 @@
   fill: green;
 }
 
-.Card_Acre {
+.cards_bacia{
 
   display: none;
   background-image: url(image\ 31.png);
@@ -19,7 +32,7 @@
   transition: height 5s;
 }
 
-.AcreB {
+.bacias_br {
   transform: translate(0px, 141px);
   width: 249px;
   height: 48px;
