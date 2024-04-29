@@ -26,29 +26,30 @@
         </g>
 
         <g class="bacias">
-            <g onmouseover="mapBacias_Coloca()" onmouseout="mapBacias_tira()" class="acre" fill="#EBE7DF"
+            <g onmouseover="mapBacias_ColocaAcre()" onmouseout="mapBacias_tiraAcre()" class="acre" fill="#EBE7DF"
                 transform="translate(-3, 164) scale(1.05)">
                 <path
                     d="M83 52.5C74.6 37.7 68.5 14 66.5 4C62.9 6.4 58.6667 3 57 1C51 5 27.1667 15 16 19.5V31C10 37 12.5 38 11 42.5C9.8 46.1 4.5 49 2 50C1.66667 53.8333 1 61.6 1 62C2 79 16.5 90.5 18 92.5C19.2 94.1 17.1667 97.1667 16 98.5C19.3333 98.6667 26.5 99.2 28.5 100C31 101 34.5 106.5 34.5 107.5C34.5 108.5 46 108 47 107.5C47.8 107.1 58.6667 97 64 92C62.1667 96 58.5 106.7 58.5 117.5C58.5 128.3 66.5 128 70.5 126.5C71.3 123.3 75.8333 122.5 78 122.5C81.5 124.5 102.5 127 101.5 124C100.5 121 105 119 105.5 119C106 119 112 119 112.5 118.5C112.9 118.1 112.667 117.333 112.5 117C113.5 114.5 104.5 94 105.5 92C106.5 90 93.5 71 83 52.5Z"
                     stroke="black" title="Bacia do Acre" />
 
             </g>
+            
 
 
-
-            <g class="dentro_map" transform="translate(270, 210) scale(1.05)">
+            <g onmouseover="mapBacias_ColocaAltotapajós()" onmouseout="mapBacias_tiraAltotapajós()" class="dentro_map" transform="translate(270, 210) scale(1.05)">
                 <path d="M10 23C9.92192 23.1952 9.92576 23.3761 10 23.5437M10 23C10.8 21 10.3333 22.5291 10 23.5437M10 23C6.8 22.5651 7.33333 18.4854 8 16.5C3.5 12.5 -3.6 3.9 4 1.5C13.5 
             -1.5 21.5 13.5 23 16.5C34.5 22.3333 57.1 35.3 55.5 40.5C59.5 41.8333 66.6 45.6 63 50C59.4 54.4 50.1667 49.1667 46 46C40.1667 45.6667 27 41.1 21 25.5C17.3904 25.5 10.6864 
             25.0928 10 23.5437" stroke="black" title="Bacia do Alto Tapajós" />
             </g>
 
-            <g class="fora_map" transform="translate(597, 355) scale(1.08)">
+            <g onmouseover="mapBacias_ColocaAlmada()" onmouseout="mapBacias_tiraAlmada()" class="fora_map" transform="translate(597, 355) scale(1.08)">
                 <path
                     d="M49.5 6.5L3.49999 1.5C5.49999 6 2.49999 5.5 1.49999 7.5C0.699995 9.1 1.16666 12.1667 1.49999 13.5L48 14.5C49.6 14.1 49.6667 9 49.5 6.5Z"
                     stroke="black" title="Bacia de Almada" />
             </g>
 
-            <g onmouseover="mapBacias1_Coloca()" onmouseout="mapBacias1_tira()" class="dentro_map" transform="translate(191, 102) scale(1.01)">
+            <g onmouseover="mapBacias_ColocaAmazonas()" onmouseout="mapBacias_tiraAmozonas()" class="dentro_map"
+                transform="translate(191, 102) scale(1.01)">
                 <path
                     d="M52.5 27C48.1 29 16 29.5 0.5 29.5C0.5 86 21.5 105.5 21.5 105C21.5 104.6 38.8333 93.8333 47.5 88.5C52.7 91.7 58.6667 88.5 61 86.5C69.5 85.6667 86.4 83.7 86 82.5C85.6 
             81.3 90.1667 77.6667 92.5 76C96 76.5 118 73.5 121.5 73.5C125 73.5 136.5 65.5 137 65C137.4 64.6 145.5 65.1667 149.5 65.5C158.7 63.5 173 57.3333 179 54.5C185 54.9 200.167 49.3333 
@@ -57,7 +58,7 @@
                     stroke="black" title=" Bacia do Amazonas" />
             </g>
 
-            <g class="dentro_map" transform="translate(570, 217) scale(1.0)">
+            <g onmouseover="mapBacias_ColocaAraripe()" onmouseout="mapBacias_tiraAraripe()" class="dentro_map" transform="translate(570, 217) scale(1.0)">
                 <path d="M1.5 29C3.1 31 5.5 28.1667 6.5 26.5C7 27.5 8.9 29.5 12.5 29.5C16.1 29.5 18 26.5 18.5 25C19.3333 24.8333 21.3 24.5 22.5 24.5C23.7 24.5 24.3333 26.5 24.5 27.5C25.5 26.5 
             33.5 28.5 34 27.5C34.5 26.5 42 25 39.5 24.5C37.5 24.1 30.6667 19.6667 27.5 17.5C28.8333 17.6667 31.6 18 32 18C32.4 18 32.8333 16.6667 33 16C37 15 49.5 16.5 50 14C50.4 12 43.1667 
             9.5 39.5 8.5C38.5 9.5 36.4 11.4 36 11C35.6 10.6 36.1667 7.5 36.5 6C34.6667 4.33333 30.8 1.1 30 1.5C29 2 23 8 23.5 8.5C24 9 30 7.5 31.5 8.5C33 9.5 32 10.5 31.5 11.5C31.1 12.3 
@@ -65,73 +66,73 @@
                     stroke="black" title="Bacia do Araripe" />
             </g>
 
-            <g class="dentro_map" transform="translate(390, 255) scale(1.0)">
+            <g   onmouseover="mapBacias_ColocaBananal()"  onmouseout="mapBacias_tiraBananal()" class="dentro_map" transform="translate(390, 255) scale(1.0)">
                 <path d="M21 11.5C21 3.9 23.6667 1 25 0.5C27 0.5 27.5 1.83333 27.5 2.5V17L29 22C29 21.3333 29.5 21.6 31.5 28C34 36 26.5 50 26.5 50.5V54C26.5 55 22 57 22.5 59.5C22.9 61.5 21.6667 
             65 21 66.5C19.8333 69.3333 17.2 75.5 16 77.5C14.5 80 8.5 85.5 4 83.5C-0.500004 81.5 1.5 75 2.5 75C3.5 75 12 61 11.5 57C11.1 53.8 13.3333 47.3333 14.5 44.5C13.3 43.3 15 38 16 
             35.5C16.4 27.1 19.5 16 21 11.5Z" stroke="black" title="Bacia de bananal" />
             </g>
 
-            <g class="fora_map" transform="translate(527, 101) scale(1.1)">
+            <g  onmouseover= "mapBacias_ColocaBarreirinhas()"  onmouseout="mapBacias_tiraBarreirinhas()" class="fora_map" transform="translate(527, 101) scale(1.1)">
                 <path
                     d="M21.5 1L1.5 38.5C20.5 38 20 41.5 21 42.5C21.8 43.3 30.3333 45.1667 34.5 46L40.5 14.5C40.1 14.5 27.6667 5.5 21.5 1Z"
                     stroke="black" title="Bacia de Barreirinhas" />
             </g>
 
-            <g class="dentro_map" transform="translate(522, 144) scale(0.8)">
+            <g  onmouseover= "mapBacias_ColocaBarreirinhas()"  onmouseout="mapBacias_tiraBarreirinhas()"   class="dentro_map" transform="translate(522, 144) scale(0.8)">
                 <path d="M48.5 9.49999C46.3333 11.8333 39.9 16.2 31.5 15C31 15 19 16 19 14.5C18.5 14 15 14 9 8.99999H2C5 5.83333 12.2 -0.200006 17 0.999994C19.6667 0.66666 25.7 0.299993 
             28.5 1.49999C32 2.99999 34 5 33.5 5.5C33 6 47 6.99999 49 9.49999" stroke="black"
                     title="Bacia de Barreirinhas - Terra" />
             </g>
 
-            <g class="fora_map" transform="translate(460, 111) scale(1.0)">
+            <g  onmouseover="mapBacias_ColocaBragança()"  onmouseout="mapBacias_tiraBragança()" class="dentro_map" transform="translate(460, 111) scale(1.0)">
                 <path d="M1.5 0.999997C1.5 1.5 -1 11 2 12C5 13 17 8 16.5 4.5C12.5 3 3.8 0.199997 1 0.999997"
                     stroke="black" title="Bacia de Bragança-Vizeu" />
             </g>
 
 
-            <g class="fora_map" transform="translate(601, 328) scale(1.05)">
+            <g  onmouseover="mapBacias_ColocaCamamu()"  onmouseout="mapBacias_tiraCamamu()" class="fora_map" transform="translate(601, 328) scale(1.05)">
                 <path
                     d="M0.5 26.5L46 31.5C47.5 29 50 22.5 48 16.5L12.5 2.5C11.8333 3.16667 9.5 3.9 5.5 1.5C4.5 0.666667 2.7 1.2 3.5 10C2.66667 10.5 1.1 12 1.5 14C2 16.5 3 26.5 0.5 26"
                     stroke="black" title="Bacia de Camamu" />
             </g>
 
-            <g class="fora_map" transform="translate(533, 465) scale(1.035)">
+            <g onmouseover="mapBacias_ColocaCampos()"  onmouseout="mapBacias_tiraCampos()" class="fora_map" transform="translate(533, 465) scale(1.035)">
                 <path
                     d="M8.5 27.5C4.1 27.5 1.66667 36.1667 1 40.5L27 78.5C29 78.1 55.1667 44.3333 68 27.5L31.5 1.5C30.3 5.5 25 9.83333 22.5 11.5L21.5 14V27.5H8.5Z"
                     stroke="black" title="Bacia de Campos" />
             </g>
 
-            <g class="dentro_map" transform="translate(543, 480) scale(1.0)">
+            <g  onmouseover="mapBacias_ColocaCampos()"  onmouseout="mapBacias_tiraCampos()" class="dentro_map" transform="translate(543, 480) scale(1.0)">
                 <path d="M1 12.5C1.33333 10.8333 2.4 7.5 4 7.5C3.83333 5.5 5.2 1.4 12 1L11.5 12L1.5 12.5" stroke="black"
                     title="Bacia de Campos-Terra" />
             </g>
 
 
-            <g class="fora_map" transform="translate(564, 116) scale(1.05)">
+            <g onmouseover="mapBacias_ColocaCeará()"  onmouseout="mapBacias_tiraCeará()"class="fora_map" transform="translate(564, 116) scale(1.05)">
                 <path
                     d="M7.5 1.5L1.5 32.5C3.9 34.5 13.1667 33.6667 17.5 33C33.1 31 56 50.5 65.5 60.5L69.5 28C65.9 28.4 26.6667 10.5 7.5 1.5Z"
                     stroke="black" title="Bacia do Ceará" />
             </g>
 
-            <g class="fora_map" transform="translate(592, 391) scale(1.09)">
+            <g onmouseover="mapBacias_ColocaCumuruxatiba()"  onmouseout="mapBacias_tiraCumuruxatiba()" class="fora_map" transform="translate(592, 391) scale(1.09)">
                 <path d="M46.5 21.5H0.5V11C1.3 7.4 6.5 2.83333 9 1L46.5 2C45.3 3.6 46 15.6667 46.5 21.5Z" stroke="black"
                     title="Bacia de Cumuruxatiba" />
             </g>
 
 
-            <g class="fora_map" transform="translate(566, 426) scale(1.03)">
+            <g onmouseover="mapBacias_ColocaEspíritoSanto()"  onmouseout="mapBacias_tiraEspíritoSanto()" class="fora_map" transform="translate(566, 426) scale(1.03)">
                 <path d="M36.5 65.5L1 39.5C4 33 10.5 25.5 14 23C16.8 21 15.1667 14.1667 14 11C15.2 8.2 15.8333 3.5 16 1.5C32 5.83333 64.1 14.7 64.5 15.5C64.9 16.3 59.3333 22.5 56.5 25.5C58.5 
             26.7 54.3333 32.6667 52 35.5C52.4 38.7 41.8333 56.8333 36.5 65.5Z" stroke="black"
                     title="Bacia do Espírito Santo" />
             </g>
 
-            <g class="dentro_map" transform="translate(570, 400) scale(1.02)">
+            <g onmouseover="mapBacias_ColocaEspíritoSanto()"  onmouseout="mapBacias_tiraEspíritoSanto()" class="dentro_map" transform="translate(570, 400) scale(1.02)">
                 <path d="M4.5 18C-2.5 24 4 51 4.5 52C5.7 52 8.66666 48.3333 10 46.5C10.3333 43.5 10.7 37.4 9.5 37C8 36.5 10.5 30.5 11 28C11.4 26 18.8333 21.5 22.5 19.5V1.5C10 9.5 11.5 
             12 4.5 18Z" stroke="black" title="Bacia do Espírito Santo - Terra" />
             </g>
 
 
-            <g class="fora_map" transform="translate(391, -8) scale(1.02)">
+            <g onmouseover="mapBacias_ColocaFozdoAmazonas()"  onmouseout="mapBacias_tiraFozdoAmazonas()" class="fora_map" transform="translate(391, -8) scale(1.02)">
                 <path
                     d="M21.5 1L1.5 27.5C4.3 28.7 8.33333 34.3333 10 37V49.5C13.2 53.5 15.3333 67.1667 16 73.5C19.6667 73.1667 27.6 73.6 30 78C33 83.5 30 90.5 29.5 93C29 95.5 14.5 96.5 
             10.5 107.5C6.5343 118.406 13.8722 123.905 15.9473 125.461L16 125.5C17.6 126.7 16.6667 132 16 134.5C18 140 24.5 136 24.5 135.5C24.5 135.1 27.8333 135.333 29.5 135.5C30.3 
@@ -350,33 +351,102 @@
         </div>
     </section>
 
-  
 
-        <div id="card_acre" class="cards_bacia">
 
-            <div class="bacias_br">
-
-                <h1>Bacia do Acre</h1>
-
-            </div>
-
+    <div id="card_acre" class="cards_bacia">
+        <div class="bacias_br">
+            <h1>Bacia do Acre</h1>
         </div>
+    </div>
 
-
-        <div id="card_amazonas" class="cards_bacia">
-
-            <div class="bacias_br">
-
-                <h1>Bacia do Amazonas</h1>
-
-            </div>
-
+    <div id="card_altotapajós" class="cards_bacia">
+        <div class="bacias_br">
+            <h1>Bacia de Alto Tapajós</h1>
         </div>
+    </div>
 
-   
-        
 
-        <script src="mapa_Bacias.js"></script>
+    <div id="card_almada" class="cards_bacia">
+        <div class="bacias_br">
+            <h1>Bacia de Almada</h1>
+        </div>
+    </div>
+
+
+
+    <div id="card_amazonas" class="cards_bacia">
+        <div class="bacias_br">
+            <h1>Bacia do Amazonas</h1>
+        </div>
+    </div>
+
+
+    <div id="card_araripe" class="cards_bacia">
+        <div class="bacias_br">
+            <h1>Bacia de Araripe</h1>
+        </div>
+    </div>
+
+
+
+
+
+    <div id="card_bananal" class="cards_bacia">
+        <div class="bacias_br">
+            <h1>Bacia de Bananal</h1>
+        </div>
+    </div>
+
+
+
+    <div id="card_barreirinhas_terra" class="cards_bacia">
+        <div class="bacias_br">
+            <h1>Bacia de Barreirinhas</h1>
+        </div>
+    </div>
+
+
+    <div id="card_bragança_Vizeu" class="cards_bacia">
+        <div class="bacias_br">
+            <h1>Bacia de Bragança-Vizeu</h1>
+        </div>
+    </div>
+
+
+    <div id="card_camamu" class="cards_bacia">
+        <div class="bacias_br">
+            <h1>Bacia de Camamu</h1>
+        </div>
+    </div>
+
+
+    <div id="card_campos" class="cards_bacia">
+        <div class="bacias_br">
+            <h1>Bacia de Campos</h1>
+        </div>
+    </div>
+
+    <div id="card_cumuruxatiba" class="cards_bacia">
+        <div class="bacias_br">
+            <h1>Bacia do Cumuruxatiba</h1>
+        </div>
+    </div>
+
+    <div id="card_ceará" class="cards_bacia">
+        <div class="bacias_br">
+            <h1>Bacia do Ceará</h1>
+        </div>
+    </div>
+
+    <div id="card_espírito" class="cards_bacia">
+        <div class="bacias_br">
+            <h1>Bacia de Espírito Santo</h1>
+        </div>
+    </div>
+
+
+
+    <script src="mapa_Bacias.js"></script>
 </body>
 
 </html>

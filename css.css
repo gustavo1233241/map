@@ -1,4 +1,4 @@
-.acre:hover .acre2{
+.acre:hover + .acre2{
 display: block;
 
 }
