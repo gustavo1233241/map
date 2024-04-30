@@ -1,23 +1,44 @@
+
+var Acre = document.getElementById('Acre')
+var interuptor = true
+
+
+
+
+
 /*Card do Acre */
-var cardAcre = document.getElementById('card_acre')
+var cardAcre = document.getElementById('Card_Acre')
 
 function mapBacias_ColocaAcre() {
 
-    cardAcre.style.height = '150px'
+    cardAcre.style.height = '160px'
     cardAcre.style.display = 'block'
 
 }
+if(){
+Acre.addEventListener('click', ()=>{
 
+    if(interuptor){
+    cardAcre.style.display = 'block'
+    
+    
+    
+    }
+    
+    
+    })
+}
+else{
 function mapBacias_tiraAcre() {
 
     cardAcre.style.display = 'none'
 
 }
-
+}
 
 
 /*Card de Alto Tapajós*/
-var cardAlto = document.getElementById('card_altotapajós')
+var cardAlto = document.getElementById('Card_Altotapajós')
 
 function mapBacias_ColocaAltotapajós() {
     cardAlto.style.height = '150px'
@@ -30,7 +51,7 @@ function mapBacias_tiraAltotapajós() {
 
 
 /*Card de Almada */
-var cardAlmada = document.getElementById('card_almada')
+var cardAlmada = document.getElementById('Card_Almada')
 
 function mapBacias_ColocaAlmada() {
     cardAlmada.style.height = '150px'
@@ -43,7 +64,7 @@ function mapBacias_tiraAlmada() {
 
 
 /*Card do Amazonas */
-var cardAmazonas = document.getElementById('card_amazonas')
+var cardAmazonas = document.getElementById('Card_Amazonas')
 
 function mapBacias_ColocaAmazonas() {
     cardAmazonas.style.height = '150px'
@@ -55,7 +76,7 @@ function mapBacias_tiraAmozonas() {
 
 
 /*Card do Araripe */
-var cardAraripe = document.getElementById('card_araripe')
+var cardAraripe = document.getElementById('Card_Araripe')
 
 function mapBacias_ColocaAraripe() {
     cardAraripe.style.height = '150px'
@@ -66,7 +87,7 @@ function mapBacias_tiraAraripe() {
 }
 
 /*Card do Bananal */
-var cardBananal = document.getElementById('card_bananal')
+var cardBananal = document.getElementById('Card_Bananal')
 
 function mapBacias_ColocaBananal() {
     cardBananal.style.height = '150px'
@@ -78,7 +99,7 @@ function mapBacias_tiraBananal() {
 
 
 /*Card de Barreirinhas_terra */
-var cardBarreirinhas = document.getElementById('card_barreirinhas_terra')
+var cardBarreirinhas = document.getElementById('Card_Barreirinhas')
 
 function mapBacias_ColocaBarreirinhas() {
     cardBarreirinhas.style.height = '150px'
@@ -89,7 +110,7 @@ function mapBacias_tiraBarreirinhas() {
 }
 
 /*Card de Bragança*/
-var cardBraganca = document.getElementById('card_bragança_Vizeu')
+var cardBraganca = document.getElementById('Card_Bragança_Vizeu')
 
 function mapBacias_ColocaBragança() {
     cardBraganca.style.height = '150px'
@@ -101,7 +122,7 @@ function mapBacias_tiraBragança() {
 
 
 /*Card de Camamu*/
-var cardCamamu = document.getElementById('card_camamu')
+var cardCamamu = document.getElementById('Card_Camamu')
 
 function mapBacias_ColocaCamamu() {
     cardCamamu.style.height = '150px'
@@ -113,7 +134,7 @@ function mapBacias_tiraCamamu() {
 
 
 /*Card de Campos*/
-var cardCampos = document.getElementById('card_campos')
+var cardCampos = document.getElementById('Card_Campos')
 
 function mapBacias_ColocaCampos() {
     cardCampos.style.height = '150px'
@@ -126,7 +147,7 @@ function mapBacias_tiraCampos() {
 
 
 /*Card de Cumuruxatiba*/
-var cardCumuruxatiba = document.getElementById('card_cumuruxatiba')
+var cardCumuruxatiba = document.getElementById('Card_Cumuruxatiba')
 
 function mapBacias_ColocaCumuruxatiba() {
     cardCumuruxatiba.style.height = '150px'
@@ -137,7 +158,7 @@ function mapBacias_tiraCumuruxatiba() {
 }
 
 /*Card de Ceará*/
-var cardCeará = document.getElementById('card_ceará')
+var cardCeará = document.getElementById('Card_Ceará')
 
 function mapBacias_ColocaCeará() {
     cardCeará.style.height = '150px'
@@ -148,7 +169,7 @@ function mapBacias_tiraCeará() {
 }
 
 /*Card de Espírito Santo*/
-var cardEspíritoSanto = document.getElementById('card_espírito')
+var cardEspíritoSanto = document.getElementById('Card_Espírito')
 
 function mapBacias_ColocaEspíritoSanto() {
     cardEspíritoSanto.style.height = '150px'
@@ -159,14 +180,45 @@ function mapBacias_tiraEspíritoSanto() {
 }
 
 /*Card de mapBacias_Coloca Foz do Amazonas*/
-var cardEspíritoSanto = document.getElementById('card_espírito')
+var cardFozAmazonas = document.getElementById('Card_FozAmazonas')
 
-function mapBacias_ColocaEspíritoSanto() {
-    cardEspíritoSanto.style.height = '150px'
-    cardEspíritoSanto.style.display = 'block'
+function mapBacias_ColocaFozAmazonas() {
+    cardFozAmazonas.style.height = '150px'
+    cardFozAmazonas.style.display = 'block'
 }
-function mapBacias_tiraEspíritoSanto() {
-    cardEspíritoSanto.style.display = 'none'
+function mapBacias_tiraFozAmazonas() {
+    cardFozAmazonas.style.display = 'none'
 }
 
+
+var cardItaboraí = document.getElementById('Card_Itaboraí')
+
+function mapBacias_ColocaItaborai() {
+    cardItaboraí.style.height = '150px'
+    cardItaboraí.style.display = 'block'
+}
+function mapBacias_tiraItaborai() {
+    cardItaboraí.style.display = 'none'
+}
+
+
+var cardJatoba = document.getElementById('Card_Jatoba')
+
+function mapBacias_ColocaJatoba() {
+    cardJatoba.style.height = '150px'
+    cardJatoba.style.display = 'block'
+}
+function mapBacias_tiraJatoba() {
+    cardJatoba.style.display = 'none'
+}
+
+var cardJequitinhonha = document.getElementById('Card_Jequitinhonha')
+
+function mapBacias_ColocaJequitinhonha() {
+    cardJequitinhonha.style.height = '150px'
+    cardJequitinhonha.style.display = 'block'
+}
+function mapBacias_tiraJequitinhonha() {
+    cardJequitinhonha.style.display = 'none'
+}
 

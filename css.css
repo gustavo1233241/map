@@ -1,17 +1,13 @@
-.acre:hover + .acre2{
-display: block;
-
-}
-
-.dentro_map{
+.dentro_map {
 
   fill: #EBE7DF;
 }
 
-.fora_map{
+.fora_map {
 
   fill: white;
 }
+
 .map {
   align-items: center;
 }
@@ -20,33 +16,83 @@ display: block;
   fill: green;
 }
 
-.cards_bacia{
-
+.cards_bacias {
   display: none;
-  background-image: url(image\ 31.png);
-  transform: translate(70px, -300px);
-  width: 250px;
-  height: 0vh;
-  background-color: black;
-  border-radius: 20px 20px 20px 20px;
+  position: absolute;
+  right:800px; 
+  height: 240px;
+  top:500px;
+  border-radius: 20px 20px 0 0;
   transition: height 5s;
 }
 
+#Card_Acre {
+
+  background-image: url(Redimencionadas/Acre.png);
+
+  background-repeat: no-repeat;
+}
+
+#Card_Altotapajós {
+
+  background-image: url(Redimencionadas/Alto_Tapajós.png);
+
+}
+
+#Card_Almada {
+
+  background-image: url(Redimencionadas/Almada.png);
+}
+
+
+#Card_Amazonas {
+
+  background-image: url(Redimencionadas/Amazonas.png);
+
+}
+
+#Card_Araripe {
+
+  background-image: url(Redimencionadas/Araripe.png);
+
+}
+
+.linha {
+
+
+  width: 150px;
+  border: 2px solid #178864;
+  position: relative;
+  top: 20px;
+  right: -0.2em;
+}
+
+
 .bacias_br {
-  transform: translate(0px, 141px);
-  width: 249px;
+  transform: translate(0px, 138px);
+  width: 300px;
   height: 48px;
-  background-color:white;
+  background-color: white;
   border-radius: 0px 0px 20px 20px;
   box-shadow: 0px 0px 21px 1px;
   transition: width 0.25s, height 0.20s;
- 
-}
-h1{
 
-font-size: large;
-font-family: 'Zen Kaku Gothic Antique';
-font-style: normal;
+}
+
+.liks_bacias{
+  color: #178864;
+  display: flex;
+  justify-content: end;
+  margin: 8px;
+}
+
+h1 {
+  position: absolute;
+  top:-10px;
+  left: 4px;
+  font-size: large;
+  font-family: 'Zen Kaku Gothic Antique';
+  font-style: normal;
 }
 
 section.card {
@@ -60,19 +106,19 @@ section.card {
 
 }
 
-section.card #titulo_sugestao{
+section.card #titulo_sugestao {
   background: #178864;
   height: 50px;
   border-radius: 12px 12px 0 0;
 }
 
-section.card #titulo_sugestao img{
+section.card #titulo_sugestao img {
   width: 35px;
   height: 35px;
   margin-top: 5px;
 }
 
-section.card #titulo_sugestao h2{
+section.card #titulo_sugestao h2 {
   color: #F6F9FF;
   font-size: 20px;
   font-family: "Poppins", sans-serif;
@@ -81,7 +127,7 @@ section.card #titulo_sugestao h2{
   margin: 0 0 0 50px;
 }
 
-section.card #texto_sugestao p{
+section.card #texto_sugestao p {
   font-family: "Poppins", sans-serif;
   font-size: 15px;
   width: 180px;
@@ -90,14 +136,13 @@ section.card #texto_sugestao p{
 }
 
 
-path .mapa_brasil{
+path .mapa_brasil {
   fill: #E7E7E7;
   stroke: white;
   stroke-width: 1px;
 }
 
-path .bacia{
+path .bacia {
   fill: none;
   stroke-width: 1px;
 }
-
