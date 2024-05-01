@@ -1,10 +1,7 @@
 
 var Acre = document.getElementById('Acre')
 var interuptor = true
-
-
-
-
+var interuptor1 = true
 
 /*Card do Acre */
 var cardAcre = document.getElementById('Card_Acre')
@@ -13,28 +10,28 @@ function mapBacias_ColocaAcre() {
 
     cardAcre.style.height = '160px'
     cardAcre.style.display = 'block'
-
 }
-if(){
-Acre.addEventListener('click', ()=>{
 
-    if(interuptor){
-    cardAcre.style.display = 'block'
-    
-    
-    
-    }
-    
-    
-    })
-}
-else{
 function mapBacias_tiraAcre() {
 
     cardAcre.style.display = 'none'
+}
 
-}
-}
+Acre.addEventListener('click', () => {
+
+    if (interuptor) {
+        cardAcre.style.display = 'block'
+        interuptor = false
+
+    }
+    else {
+
+        cardAcre.style.display = 'none'
+        interuptor = true
+    }
+
+})
+
 
 
 /*Card de Alto Tapajós*/
