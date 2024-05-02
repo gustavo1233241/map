@@ -1,5 +1,5 @@
 
-var acre = document.getElementById('Acre')
+var Acre = document.getElementById('Acre')
 var interuptor = true
 var interuptor1 = true
 
@@ -7,43 +7,46 @@ var interuptor1 = true
 
 /*Card do Acre */
 
+
+
+
 var cardAcre = document.getElementById('Card_Acre')
 
 function mapBacias_ColocaAcre() {
 
-   
+    cardAcre.style.height = '160px'
     cardAcre.style.display = 'block'
 }
 
 
-function mapBacias_tiraAcre() {
+if(interuptor1){
+function SelecionaBacia(){
 
-    cardAcre.style.display = 'none'
+    if (interuptor) {
+        cardAcre.style.display = 'block'
+        interuptor = false
+
+    }
+    else {
+
+        cardAcre.style.display = "none"
+        interuptor = true
+    }
+
 }
+interuptor1 = false
 
-
-acre.addEventListener('click', ()=>{
-
-    if(interuptor){
-
-
-    cardAcre.style.display = 'block'
-    interuptor = false
-    
-
-}
-else {
-
-
-    cardAcre.style.display = 'none'
-    interuptor = true
 
 }
 
-})
+else{
 
-    
+    function mapBacias_tiraAcre() {
 
+        cardAcre.style.display = 'none'
+    }
+interuptor1=true
+}
 
 
 

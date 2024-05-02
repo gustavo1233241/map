@@ -1,34 +1,46 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Seguir o Mouse ao Clicar</title>
     <style>
         #ponto {
-            width: 10px;
-            height: 10px;
-            background-color: black;
-            border-radius: 50%;
-            position: absolute;
+            content: "";
+
+width: 0;
+height: 0;
+
+position: absolute;
+border-radius: 90px 90px 90px 90px; 
+border-left: 15px solid transparent;
+border-right: 15px solid transparent;
+border-top: 30px solid #000;
+
+bottom: -20px;
+left: 50%;
         }
+
     </style>
 </head>
+
 <body>
     <div id="ponto"></div>
-    
+
 
     <script>
 
 
-const ponto = document.getElementById('ponto');
+        const ponto = document.getElementById('ponto');
 
-document.addEventListener('click', (event) => {
-    const x = event.clientX;
-    const y = event.clientY;
+        document.addEventListener('click', (event) => {
+            const x = event.clientX;
+            const y = event.clientY;
 
-    ponto.style.left = `${x}px`;
-    ponto.style.top = `${y}px`;
-});
+            ponto.style.left = `${x}px`;
+            ponto.style.top = `${y}px`;
+        });
 
     </script>
 </body>
+
 </html>
