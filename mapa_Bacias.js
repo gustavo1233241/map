@@ -1,7 +1,44 @@
-var cardAcre = document.getElementById('Card_Acre')
 interuptor = true
 interuptor1 = true
-interuptor2 = true
+
+var cardAmazonas = document.getElementById('Card_Amazonas')
+
+
+function mapBacias_ColocaAmazonas() {
+    cardAmazonas.style.height = '150px'
+    cardAmazonas.style.display = 'block'
+}
+function mapBacias_tiraAmazonas() {
+
+    if (interuptor1)
+    cardAmazonas.style.display = 'none'
+    interuptor1 = true
+}
+
+
+function SelecionaAmazonas() {
+
+    if (interuptor) {
+        cardAmazonas.style.display = 'block'
+        interuptor = false
+
+    }
+    else {
+
+        cardAmazonas.style.display = "none"
+        interuptor = true
+    }
+    interuptor1 = false
+
+}
+
+
+var cardAcre = document.getElementById('Card_Acre')
+
+
+
+
+
 function mapBacias_ColocaAcre() {
     cardAcre.style.height = '150px'
     cardAcre.style.display = 'block'
@@ -40,9 +77,9 @@ function mapBacias_ColocaAltotapajos() {
 }
 function mapBacias_tiraAltotapajos() {
 
-    if (interuptor2)
+    if (interuptor1)
         cardAlto.style.display = 'none'
-    interuptor2 = true
+    interuptor1 = true
 }
 function SelecionaAltotapajos() {
 
@@ -56,7 +93,7 @@ function SelecionaAltotapajos() {
         cardAlto.style.display = "none"
         interuptor = true
     }
-    interuptor2 = false
+    interuptor1 = false
 
 }
 
@@ -69,18 +106,25 @@ function mapBacias_ColocaAlmada() {
     cardAlmada.style.display = 'block'
 }
 function mapBacias_tiraAlmada() {
+
+    if (interuptor1)
     cardAlmada.style.display = 'none'
+    interuptor1 = true
 }
+function SelecionaAlmada() {
 
+    if (interuptor) {
+        cardAlmada.style.display = 'block'
+        interuptor = false
 
-var cardAmazonas = document.getElementById('Card_Amazonas')
+    }
+    else {
 
-function mapBacias_ColocaAmazonas() {
-    cardAmazonas.style.height = '150px'
-    cardAmazonas.style.display = 'block'
-}
-function mapBacias_tiraAmazonas() {
-    cardAmazonas.style.display = 'none'
+        cardAlmada.style.display = "none"
+        interuptor = true
+    }
+    interuptor1 = false
+
 }
 
 
@@ -91,9 +135,26 @@ function mapBacias_ColocaAraripe() {
     cardAraripe.style.display = 'block'
 }
 function mapBacias_tiraAraripe() {
-    cardAraripe.style.display = 'none'
-}
 
+    if (interuptor1)
+    cardAraripe.style.display = 'none'
+    interuptor1 = true
+}
+function SelecionaAraripe() {
+
+    if (interuptor) {
+        cardAraripe.style.display = 'block'
+        interuptor = false
+
+    }
+    else {
+
+        cardAraripe.style.display = "none"
+        interuptor = true
+    }
+    interuptor1 = false
+
+}
 
 var cardBananal = document.getElementById('Card_Bananal')
 
@@ -102,9 +163,26 @@ function mapBacias_ColocaBananal() {
     cardBananal.style.display = 'block'
 }
 function mapBacias_tiraBananal() {
-    cardBananal.style.display = 'none'
-}
 
+    if (interuptor1)
+    cardBananal.style.display = 'none'
+    interuptor1 = true
+}
+function SelecionaBananal() {
+
+    if (interuptor) {
+        cardBananal.style.display = 'block'
+        interuptor = false
+
+    }
+    else {
+
+        cardBananal.style.display = "none"
+        interuptor = true
+    }
+    interuptor1 = false
+
+}
 
 var cardBarreirinhas = document.getElementById('Card_Barreirinhas')
 
@@ -113,10 +191,26 @@ function mapBacias_ColocaBarreirinhas() {
     cardBarreirinhas.style.display = 'block'
 }
 function mapBacias_tiraBarreirinhas() {
+
+    if (interuptor1)
     cardBarreirinhas.style.display = 'none'
+    interuptor1 = true
 }
+function SelecionaBarreinhas() {
 
+    if (interuptor) {
+        cardBarreirinhas.style.display = 'block'
+        interuptor = false
 
+    }
+    else {
+
+        cardBarreirinhas.style.display = "none"
+        interuptor = true
+    }
+    interuptor1 = false
+
+}
 var cardBarreirinhasTerra = document.getElementById('Card_Barreirinhas_Terra')
 
 function mapBacias_ColocaBarreirinhasT() {
@@ -124,7 +218,25 @@ function mapBacias_ColocaBarreirinhasT() {
     cardBarreirinhasTerra.style.display = 'block'
 }
 function mapBacias_tiraBarreirinhasT() {
+
+    if (interuptor1)
     cardBarreirinhasTerra.style.display = 'none'
+    interuptor1 = true
+}
+function SelecionaBarreinhasT() {
+
+    if (interuptor) {
+        cardBarreirinhasTerra.style.display = 'block'
+        interuptor = false
+
+    }
+    else {
+
+        cardBarreirinhasTerra.style.display = "none"
+        interuptor = true
+    }
+    interuptor1 = false
+
 }
 
 
@@ -135,9 +247,25 @@ function mapBacias_ColocaBraganca() {
     cardBraganca.style.display = 'block'
 }
 function mapBacias_tiraBraganca() {
-    cardBraganca.style.display = 'none'
-}
 
+    if (interuptor1)
+    cardBraganca.style.display = 'none'
+    interuptor1 = true
+}
+function SelecionaBraganca() {
+
+    if (interuptor) {
+        cardBraganca.style.display = 'block'
+        interuptor = false
+
+    }
+    else {
+
+        cardBraganca.style.display = "none"
+        interuptor = true
+    }
+    interuptor1 = false
+}
 
 var cardCamamu = document.getElementById('Card_Camamu')
 
@@ -146,9 +274,25 @@ function mapBacias_ColocaCamamu() {
     cardCamamu.style.display = 'block'
 }
 function mapBacias_tiraCamamu() {
-    cardCamamu.style.display = 'none'
-}
 
+    if (interuptor1)
+    cardCamamu.style.display = 'none'
+    interuptor1 = true
+}
+function SelecionaCamamu() {
+
+    if (interuptor) {
+        cardCamamu.style.display = 'block'
+        interuptor = false
+
+    }
+    else {
+
+        cardCamamu.style.display = "none"
+        interuptor = true
+    }
+    interuptor1 = false
+}
 
 var cardCampos = document.getElementById('Card_Campos')
 
@@ -156,8 +300,26 @@ function mapBacias_ColocaCampos() {
     cardCampos.style.height = '150px'
     cardCampos.style.display = 'block'
 }
+
 function mapBacias_tiraCampos() {
+
+    if (interuptor1)
     cardCampos.style.display = 'none'
+    interuptor1 = true
+}
+function SelecionaCampos() {
+
+    if (interuptor) {
+        cardCampos.style.display = 'block'
+        interuptor = false
+
+    }
+    else {
+
+        cardCampos.style.display = "none"
+        interuptor = true
+    }
+    interuptor1 = false
 }
 
 
@@ -168,8 +330,26 @@ function mapBacias_ColocaCamposT() {
     cardCamposTerra.style.display = 'block'
 }
 function mapBacias_tiraCamposT() {
+
+    if (interuptor1)
     cardCamposTerra.style.display = 'none'
+    interuptor1 = true
 }
+function SelecionaCamposT() {
+
+    if (interuptor) {
+        cardCamposTerra.style.display = 'block'
+        interuptor = false
+
+    }
+    else {
+
+        cardCamposTerra.style.display = "none"
+        interuptor = true
+    }
+    interuptor1 = false
+}
+
 
 
 var cardCumuruxatiba = document.getElementById('Card_Cumuruxatiba')
@@ -179,8 +359,26 @@ function mapBacias_ColocaCumuruxatiba() {
     cardCumuruxatiba.style.display = 'block'
 }
 function mapBacias_tiraCumuruxatiba() {
+
+    if (interuptor1)
     cardCumuruxatiba.style.display = 'none'
+    interuptor1 = true
 }
+function SelecionaCumuruxatiba() {
+
+    if (interuptor) {
+        cardCumuruxatiba.style.display = 'block'
+        interuptor = false
+
+    }
+    else {
+
+        cardCumuruxatiba.style.display = "none"
+        interuptor = true
+    }
+    interuptor1 = false
+}
+
 
 
 var cardCeara = document.getElementById('Card_Ceara')
@@ -190,9 +388,25 @@ function mapBacias_ColocaCeara() {
     cardCeara.style.display = 'block'
 }
 function mapBacias_tiraCeara() {
-    cardCeara.style.display = 'none'
-}
 
+    if (interuptor1)
+    cardCeara.style.display = 'none'
+    interuptor1 = true
+}
+function SelecionaCeara() {
+
+    if (interuptor) {
+        cardCeara.style.display = 'block'
+        interuptor = false
+
+    }
+    else {
+
+        cardCeara.style.display = "none"
+        interuptor = true
+    }
+    interuptor1 = false
+}
 
 var cardEspiritoSanto = document.getElementById('Card_Espirito')
 
@@ -201,9 +415,25 @@ function mapBacias_ColocaEspiritoSanto() {
     cardEspiritoSanto.style.display = 'block'
 }
 function mapBacias_tiraEspiritoSanto() {
-    cardEspiritoSanto.style.display = 'none'
-}
 
+    if (interuptor1)
+    cardEspiritoSanto.style.display = 'none'
+    interuptor1 = true
+}
+function SelecionaEspiritoSanto() {
+
+    if (interuptor) {
+        cardEspiritoSanto.style.display = 'block'
+        interuptor = false
+
+    }
+    else {
+
+        cardEspiritoSanto.style.display = "none"
+        interuptor = true
+    }
+    interuptor1 = false
+}
 
 var cardEspiritoSantoTerra = document.getElementById('Card_Espírito_Santo_Terra')
 
@@ -212,7 +442,24 @@ function mapBacias_ColocaEspiritoSantoT() {
     cardEspiritoSantoTerra.style.display = 'block'
 }
 function mapBacias_tiraEspiritoSantoT() {
+
+    if (interuptor1)
     cardEspiritoSantoTerra.style.display = 'none'
+    interuptor1 = true
+}
+function SelecionaEspiritoSantoT() {
+
+    if (interuptor) {
+        cardEspiritoSantoTerra.style.display = 'block'
+        interuptor = false
+
+    }
+    else {
+
+        cardEspiritoSantoTerra.style.display = "none"
+        interuptor = true
+    }
+    interuptor1 = false
 }
 
 
@@ -223,9 +470,25 @@ function mapBacias_ColocaFozAmazonas() {
     cardFozAmazonas.style.display = 'block'
 }
 function mapBacias_tiraFozAmazonas() {
-    cardFozAmazonas.style.display = 'none'
-}
 
+    if (interuptor1)
+    cardFozAmazonas.style.display = 'none'
+    interuptor1 = true
+}
+function SelecionaFozAmazonas() {
+
+    if (interuptor) {
+        cardFozAmazonas.style.display = 'block'
+        interuptor = false
+
+    }
+    else {
+
+        cardFozAmazonas.style.display = "none"
+        interuptor = true
+    }
+    interuptor1 = false
+}
 
 var cardItaborai = document.getElementById('Card_Itaborai')
 
@@ -233,8 +496,26 @@ function mapBacias_ColocaItaborai() {
     cardItaborai.style.height = '150px'
     cardItaborai.style.display = 'block'
 }
+
 function mapBacias_tiraItaborai() {
+
+    if (interuptor1)
     cardItaborai.style.display = 'none'
+    interuptor1 = true
+}
+function SelecionaItaborai() {
+
+    if (interuptor) {
+        cardItaborai.style.display = 'block'
+        interuptor = false
+
+    }
+    else {
+
+        cardItaborai.style.display = "none"
+        interuptor = true
+    }
+    interuptor1 = false
 }
 
 
@@ -245,7 +526,24 @@ function mapBacias_ColocaJatoba() {
     cardJatoba.style.display = 'block'
 }
 function mapBacias_tiraJatoba() {
+
+    if (interuptor1)
     cardJatoba.style.display = 'none'
+    interuptor1 = true
+}
+function SelecionaJatoba() {
+
+    if (interuptor) {
+        cardJatoba.style.display = 'block'
+        interuptor = false
+
+    }
+    else {
+
+        cardJatoba.style.display = "none"
+        interuptor = true
+    }
+    interuptor1 = false
 }
 
 
@@ -255,10 +553,26 @@ function mapBacias_ColocaJequitinhonha() {
     cardJequitinhonha.style.height = '150px'
     cardJequitinhonha.style.display = 'block'
 }
-function mapBacias_tiraJequitinhonha() {
-    cardJequitinhonha.style.display = 'none'
-}
+function mapBacias_tiraJatoba() {
 
+    if (interuptor1)
+    cardJequitinhonha.style.display = 'none'
+    interuptor1 = true
+}
+function SelecionaJatoba() {
+
+    if (interuptor) {
+        cardJequitinhonha.style.display = 'block'
+        interuptor = false
+
+    }
+    else {
+
+        cardJequitinhonha.style.display = "none"
+        interuptor = true
+    }
+    interuptor1 = false
+}
 
 var cardJequitinhonhaTerra = document.getElementById('Card_Jequitinhonha_Terra')
 
