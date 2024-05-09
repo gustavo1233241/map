@@ -1,46 +1,39 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Seguir o Mouse ao Clicar</title>
-    <style>
-        #ponto {
-            content: "";
-
-width: 0;
-height: 0;
-
-position: absolute;
-border-radius: 90px 90px 90px 90px; 
-border-left: 15px solid transparent;
-border-right: 15px solid transparent;
-border-top: 30px solid #000;
-
-bottom: -20px;
-left: 50%;
-        }
-
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Substituir Div</title>
+<style>
+  .div1, .div2 {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    margin-bottom: 10px;
+    display: none;
+  }
+</style>
 </head>
-
 <body>
-    <div id="ponto"></div>
 
+<div class="div1">Div 1</div>
+<div class="div2">Div 2</div>
+<button onclick="trocarDiv()">Trocar Div</button>
 
-    <script>
+<script>
+function trocarDiv() {
+  var div1 = document.querySelector('.div1');
+  var div2 = document.querySelector('.div2');
 
+  if (div1.style.display === 'none') {
+    div1.style.display = 'block';
+    div2.style.display = 'none';
+  } else {
+    div1.style.display = 'none';
+    div2.style.display = 'block';
+  }
+}
+</script>
 
-        const ponto = document.getElementById('ponto');
-
-        document.addEventListener('click', (event) => {
-            const x = event.clientX;
-            const y = event.clientY;
-
-            ponto.style.left = `${x}px`;
-            ponto.style.top = `${y}px`;
-        });
-
-    </script>
 </body>
-
 </html>

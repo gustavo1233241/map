@@ -14,10 +14,7 @@ function mapBacias_tiraAmazonas() {
     if (interuptor1)
     cardAmazonas.style.display = 'none'
     interuptor1 = true
-}
-
-
-function SelecionaAmazonas() {
+}function SelecionaAmazonas() {
 
     if (interuptor) {
         cardAmazonas.style.display = 'block'
@@ -35,7 +32,7 @@ function SelecionaAmazonas() {
 
 
 var cardAcre = document.getElementById('Card_Acre')
-
+var cards = document.getElementsByClassName('cards_bacias')
 
 
 
@@ -53,19 +50,28 @@ function mapBacias_tiraAcre() {
 
 
 function SelecionaAcre() {
-
+  
+   
     if (interuptor) {
+     
         cardAcre.style.display = 'block'
+        
         interuptor = false
 
     }
     else {
-
+        
         cardAcre.style.display = "none"
         interuptor = true
+        
     }
+ 
     interuptor1 = false
+    if(cards.style.display = 'none'){
 
+
+        cardAcre.style
+    }
 }
 
 
@@ -660,7 +666,7 @@ function mapBacias_ColocaMucuri() {
 function mapBacias_tiraMucuri() {
 
     if (interuptor1)
-    cardMarajo.style.display = 'none'
+    cardMucuri.style.display = 'none'
     interuptor1 = true
 }
 function SelecionaMucuri() {
@@ -854,19 +860,19 @@ function mapBacias_ColocaPernambucoParaiba() {
 function mapBacias_tiraPernambucoParaiba() {
 
     if (interuptor1)
-    cardPelotas.style.display = 'none'
+    cardPernambucoParaiba.style.display = 'none'
     interuptor1 = true
 }
 function SelecionaPernambucoParaiba() {
 
     if (interuptor) {
-        cardPelotas.style.display = 'block'
+        cardPernambucoParaiba.style.display = 'block'
         interuptor = false
 
     }
     else {
 
-        cardPelotas.style.display = "none"
+        cardPernambucoParaiba.style.display = "none"
         interuptor = true
     }
     interuptor1 = false
