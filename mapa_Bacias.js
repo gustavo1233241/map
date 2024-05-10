@@ -2,9 +2,60 @@ interuptor = true
 interuptor1 = true
 
 
+
+
+/* Ids dos cards*/ 
 var cardAmazonas = document.getElementById('Card_Amazonas')
+var cardAcre = document.getElementById('Card_Acre')
+var cardAlto = document.getElementById('Card_Altotapajos')
+var cardSolimoes = document.getElementById('Card_Solimoes')
+var cardAlmada = document.getElementById('Card_Almada')
+var cardAraripe = document.getElementById('Card_Araripe')
+var cardBananal = document.getElementById('Card_Bananal')
+var cardBarreirinhas = document.getElementById('Card_Barreirinhas')
+var cardBarreirinhasTerra = document.getElementById('Card_Barreirinhas_Terra')
+var cardBraganca = document.getElementById('Card_Braganca_Vizeu')
+var cardCamamu = document.getElementById('Card_Camamu')
+var cardCampos = document.getElementById('Card_Campos')
+var cardCamposTerra = document.getElementById('Card_Campos_Terra')
+var cardCumuruxatiba = document.getElementById('Card_Cumuruxatiba')
+var cardCeara = document.getElementById('Card_Ceara')
+var cardEspiritoSanto = document.getElementById('Card_Espirito')
+var cardEspiritoSantoTerra = document.getElementById('Card_Espírito_Santo_Terra')
+var cardFozAmazonas = document.getElementById('Card_FozAmazonas')
+var cardItaborai = document.getElementById('Card_Itaborai')
+var cardJatoba = document.getElementById('Card_Jatoba')
+var cardJequitinhonha = document.getElementById('Card_Jequitinhonha')
+var cardJequitinhonhaTerra = document.getElementById('Card_Jequitinhonha_Terra')
+var cardMarajo = document.getElementById('Card_Marajo')
+var cardMucuri = document.getElementById('Card_Mucuri')
+var cardPantanal = document.getElementById('Card_Pantanal')
+var cardParaMaranhao = document.getElementById('Card_Para_Maranhao')
+var cardParana = document.getElementById('Card_Parana')
+var cardParecis = document.getElementById('Card_Parecis')
+var cardParnaiba = document.getElementById('Card_Parnaiba')
+var cardPelotas = document.getElementById('Card_Pelotas')
+var cardPernambucoParaiba = document.getElementById('Card_Pernambuco_Paraiba')
+var cardPernambucoParaibaTerra = document.getElementById('Card_Pernambuco_Paraiba_Terra')
+var cardPotiguar = document.getElementById('Card_Potiguar')
+var cardPotiguarTerra = document.getElementById('Card_Potiguar_Terra')
+var cardReconcavo = document.getElementById('Card_Reconcavo')
+var cardSantos = document.getElementById('Card_Santos')
+var cardSaoFrancisco = document.getElementById('Card_Sao_Francisco')
+var cardSaoLuis = document.getElementById('Card_Sao_Luis')
+var cardSaoLuisGrajau = document.getElementById('Card_Sao_Luis_Grajau')
+var cardSergipeAlagoas = document.getElementById('Card_Sergipe_Alagoas')
+var cardSergipeAlagoasTerra = document.getElementById('Card_Sergipe_Alagoas_Terra')
+var cardTacutu = document.getElementById('Card_Tacutu')
+var cardTaubate = document.getElementById('Card_Taubate')
+var cardTucano = document.getElementById('Card_Tucano')
+
+var cards = [cardAmazonas, cardAcre, cardAlto, cardSolimoes, cardAlmada, cardAraripe, cardBananal, cardBarreirinhas, cardBarreirinhasTerra, cardBraganca, cardCamamu, cardCampos, cardCamposTerra, cardCumuruxatiba, cardCeara, cardEspiritoSanto, cardEspiritoSantoTerra, cardFozAmazonas, cardItaborai, cardJatoba, cardJequitinhonha, cardJequitinhonhaTerra, cardMarajo, cardMucuri, cardPantanal, cardParaMaranhao, cardParana, cardParecis, cardParnaiba, cardPelotas, cardPernambucoParaiba, cardPotiguar, cardPotiguarTerra, cardReconcavo, cardSantos, cardSaoFrancisco, cardSaoLuis, cardSaoLuisGrajau, cardSergipeAlagoas, cardSergipeAlagoasTerra, cardTacutu, cardTaubate, cardTucano]
 
 
+
+let array = [cardAcre, cardAmazonas]
+/*Funcões dos cards */
 function mapBacias_ColocaAmazonas() {
     cardAmazonas.style.height = '150px'
     cardAmazonas.style.display = 'block'
@@ -14,25 +65,25 @@ function mapBacias_tiraAmazonas() {
     if (interuptor1)
     cardAmazonas.style.display = 'none'
     interuptor1 = true
-}function SelecionaAmazonas() {
+}
 
+// Variável para controlar o estado das divs
+
+
+// Função para fazer a div selecionada aparecer e as outras desaparecerem
+function SelecionaAmazonas() {
     if (interuptor) {
-        cardAmazonas.style.display = 'block'
-        interuptor = false
-
+        cardAmazonas.style.display = 'block';
+        cardAcre.style.display = 'none';
+        interuptor = false;
+    } else {
+        cardAmazonas.style.display = 'none';
+        cardAcre.style.display = 'block';
+        interuptor = true;
     }
-    else {
-
-        cardAmazonas.style.display = "none"
-        interuptor = true
-    }
-    interuptor1 = false
-
 }
 
 
-var cardAcre = document.getElementById('Card_Acre')
-var cards = document.getElementsByClassName('cards_bacias')
 
 
 
@@ -53,7 +104,7 @@ function SelecionaAcre() {
   
    
     if (interuptor) {
-     
+     cards.innerHTML = ''
         cardAcre.style.display = 'block'
         
         interuptor = false
@@ -67,16 +118,13 @@ function SelecionaAcre() {
     }
  
     interuptor1 = false
-    if(cards.style.display = 'none'){
 
 
-        cardAcre.style
-    }
+
 }
 
 
 
-var cardAlto = document.getElementById('Card_Altotapajos')
 
 function mapBacias_ColocaAltotapajos() {
     cardAlto.style.height = '150px'
@@ -106,7 +154,7 @@ function SelecionaAltotapajos() {
 
 
 
-var cardAlmada = document.getElementById('Card_Almada')
+
 
 function mapBacias_ColocaAlmada() {
     cardAlmada.style.height = '150px'
@@ -135,7 +183,7 @@ function SelecionaAlmada() {
 }
 
 
-var cardAraripe = document.getElementById('Card_Araripe')
+
 
 function mapBacias_ColocaAraripe() {
     cardAraripe.style.height = '150px'
@@ -163,7 +211,7 @@ function SelecionaAraripe() {
 
 }
 
-var cardBananal = document.getElementById('Card_Bananal')
+
 
 function mapBacias_ColocaBananal() {
     cardBananal.style.height = '150px'
@@ -191,7 +239,6 @@ function SelecionaBananal() {
 
 }
 
-var cardBarreirinhas = document.getElementById('Card_Barreirinhas')
 
 function mapBacias_ColocaBarreirinhas() {
     cardBarreirinhas.style.height = '150px'
@@ -218,7 +265,7 @@ function SelecionaBarreinhas() {
     interuptor1 = false
 
 }
-var cardBarreirinhasTerra = document.getElementById('Card_Barreirinhas_Terra')
+
 
 function mapBacias_ColocaBarreirinhasT() {
     cardBarreirinhasTerra.style.height = '150px'
@@ -247,7 +294,7 @@ function SelecionaBarreinhasT() {
 }
 
 
-var cardBraganca = document.getElementById('Card_Braganca_Vizeu')
+
 
 function mapBacias_ColocaBraganca() {
     cardBraganca.style.height = '150px'
@@ -274,7 +321,7 @@ function SelecionaBraganca() {
     interuptor1 = false
 }
 
-var cardCamamu = document.getElementById('Card_Camamu')
+
 
 function mapBacias_ColocaCamamu() {
     cardCamamu.style.height = '150px'
@@ -301,7 +348,7 @@ function SelecionaCamamu() {
     interuptor1 = false
 }
 
-var cardCampos = document.getElementById('Card_Campos')
+
 
 function mapBacias_ColocaCampos() {
     cardCampos.style.height = '150px'
@@ -330,7 +377,7 @@ function SelecionaCampos() {
 }
 
 
-var cardCamposTerra = document.getElementById('Card_Campos_Terra')
+
 
 function mapBacias_ColocaCamposT() {
     cardCamposTerra.style.height = '150px'
@@ -359,7 +406,7 @@ function SelecionaCamposT() {
 
 
 
-var cardCumuruxatiba = document.getElementById('Card_Cumuruxatiba')
+
 
 function mapBacias_ColocaCumuruxatiba() {
     cardCumuruxatiba.style.height = '150px'
@@ -388,7 +435,7 @@ function SelecionaCumuruxatiba() {
 
 
 
-var cardCeara = document.getElementById('Card_Ceara')
+
 
 function mapBacias_ColocaCeara() {
     cardCeara.style.height = '150px'
@@ -415,7 +462,7 @@ function SelecionaCeara() {
     interuptor1 = false
 }
 
-var cardEspiritoSanto = document.getElementById('Card_Espirito')
+
 
 function mapBacias_ColocaEspiritoSanto() {
     cardEspiritoSanto.style.height = '150px'
@@ -445,7 +492,7 @@ function SelecionaEspiritoSanto() {
 
 
 
-var cardEspiritoSantoTerra = document.getElementById('Card_Espírito_Santo_Terra')
+
 
 function mapBacias_ColocaEspiritoSantoT() {
     cardEspiritoSantoTerra.style.height = '150px'
@@ -473,8 +520,6 @@ function SelecionaEspiritoSantoT() {
 }
 
 
-
-var cardFozAmazonas = document.getElementById('Card_FozAmazonas')
 
 function mapBacias_ColocaFozAmazonas() {
     cardFozAmazonas.style.height = '150px'
@@ -506,7 +551,6 @@ function SelecionaFozAmazonas() {
 
 
 
-var cardItaborai = document.getElementById('Card_Itaborai')
 
 function mapBacias_ColocaItaborai() {
     cardItaborai.style.height = '150px'
@@ -537,7 +581,7 @@ function SelecionaItaborai() {
 
 
 
-var cardJatoba = document.getElementById('Card_Jatoba')
+
 
 function mapBacias_ColocaJatoba() {
     cardJatoba.style.height = '150px'
@@ -567,7 +611,6 @@ function SelecionaJatoba() {
 
 
 
-var cardJequitinhonha = document.getElementById('Card_Jequitinhonha')
 
 function mapBacias_ColocaJequitinhonha() {
     cardJequitinhonha.style.height = '150px'
@@ -597,7 +640,7 @@ function SelecionaJequitinhonha() {
 
 
 
-var cardJequitinhonhaTerra = document.getElementById('Card_Jequitinhonha_Terra')
+
 
 function mapBacias_ColocaJequitinhonhaT() {
     cardJequitinhonhaTerra.style.height = '150px'
@@ -626,7 +669,6 @@ function SelecionaJequitinhonhaT() {
 
 
 
-var cardMarajo = document.getElementById('Card_Marajo')
 
 function mapBacias_ColocaMarajo() {
     cardMarajo.style.height = '150px'
@@ -657,7 +699,6 @@ function SelecionaMarajo() {
 
 
 
-var cardMucuri = document.getElementById('Card_Mucuri')
 
 function mapBacias_ColocaMucuri() {
     cardMucuri.style.height = '150px'
@@ -685,7 +726,6 @@ function SelecionaMucuri() {
 
 }
 
-var cardPantanal = document.getElementById('Card_Pantanal')
 
 function mapBacias_ColocaPantanal() {
     cardPantanal.style.height = '150px'
@@ -713,7 +753,6 @@ function SelecionaPantanal() {
 
 }
 
-var cardParaMaranhao = document.getElementById('Card_Para_Maranhao')
 
 function mapBacias_ColocaParaMaranhao() {
     cardParaMaranhao.style.height = '150px'
@@ -741,7 +780,6 @@ function SelecionaParaMaranhao() {
 
 }
 
-var cardParana = document.getElementById('Card_Parana')
 
 function mapBacias_ColocaParana() {
     cardParana.style.height = '150px'
@@ -769,7 +807,6 @@ function SelecionaParana() {
 
 }
 
-var cardParecis = document.getElementById('Card_Parecis')
 
 function mapBacias_ColocaParecis() {
     cardParecis.style.height = '150px'
@@ -796,7 +833,6 @@ function SelecionaParecis() {
     interuptor1 = false
 
 }
-var cardParnaiba = document.getElementById('Card_Parnaiba')
 
 function mapBacias_ColocaParnaiba() {
     cardParnaiba.style.height = '150px'
@@ -823,7 +859,6 @@ function SelecionaParnaiba() {
     interuptor1 = false
 
 }
-var cardPelotas = document.getElementById('Card_Pelotas')
 
 function mapBacias_ColocaPelotas() {
     cardPelotas.style.height = '150px'
@@ -851,7 +886,6 @@ function SelecionaPelotas() {
 
 }
 
-var cardPernambucoParaiba = document.getElementById('Card_Pernambuco_Paraiba')
 
 function mapBacias_ColocaPernambucoParaiba() {
     cardPernambucoParaiba.style.height = '150px'
@@ -880,7 +914,6 @@ function SelecionaPernambucoParaiba() {
 }
 
 
-var cardPernambucoParaibaTerra = document.getElementById('Card_Pernambuco_Paraiba_Terra')
 
 function mapBacias_ColocaPernambucoParaibaT() {
     cardPernambucoParaibaTerra.style.height = '150px'
@@ -909,7 +942,6 @@ function SelecionaPernambucoParaibaT() {
 }
 
 
-var cardPotiguar = document.getElementById('Card_Potiguar')
 
 function mapBacias_ColocaPotiguar() {
     cardPotiguar.style.height = '150px'
@@ -938,7 +970,6 @@ function SelecionaPotiguar() {
 }
 
 
-var cardPotiguarTerra = document.getElementById('Card_Potiguar_Terra')
 
 function mapBacias_ColocaPotiguarT() {
     cardPotiguarTerra.style.height = '150px'
@@ -967,7 +998,6 @@ function SelecionaPotiguarT() {
 }
 
 
-var cardReconcavo = document.getElementById('Card_Reconcavo')
 
 function mapBacias_ColocaReconcavo() {
     cardReconcavo.style.height = '150px'
@@ -997,7 +1027,6 @@ function SelecionaReconcavo() {
 
 
 
-var cardSantos = document.getElementById('Card_Santos')
 
 function mapBacias_ColocaSantos() {
     cardSantos.style.height = '150px'
@@ -1026,7 +1055,6 @@ function SelecionaSantos() {
 }
 
 
-var cardSaoFrancisco = document.getElementById('Card_Sao_Francisco')
 
 function mapBacias_ColocaSaoFrancisco() {
     cardSaoFrancisco.style.height = '150px'
@@ -1054,7 +1082,6 @@ function SelecionaSaoFrancisco() {
 
 }
 
-var cardSaoLuis = document.getElementById('Card_Sao_Luis')
 
 function mapBacias_ColocaSaoLuis() {
     cardSaoLuis.style.height = '150px'
@@ -1082,7 +1109,6 @@ function SelecionaSaoLuis() {
 
 }
 
-var cardSaoLuisGrajau = document.getElementById('Card_Sao_Luis_Grajau')
 
 function mapBacias_ColocaSaoLuisGrajau() {
     cardSaoLuisGrajau.style.height = '150px'
@@ -1110,7 +1136,6 @@ function SelecionaSaoLuisGrajau() {
 
 }
 
-var cardSergipeAlagoas = document.getElementById('Card_Sergipe_Alagoas')
 
 function mapBacias_ColocaSergipeAlagoas() {
     cardSergipeAlagoas.style.height = '150px'
@@ -1139,7 +1164,7 @@ function SelecionaSergipeAlagoas() {
 }
 
 
-var cardSergipeAlagoasTerra = document.getElementById('Card_Sergipe_Alagoas_Terra')
+var cardTacutu = document.getElementById('Card_Tacutu')
 
 function mapBacias_ColocaSergipeAlagoasT() {
     cardSergipeAlagoasTerra.style.height = '150px'
@@ -1169,7 +1194,7 @@ function SelecionaSergipeAlagoasT() {
 
 
 
-var cardSolimoes = document.getElementById('Card_Solimoes')
+
 
 function mapBacias_ColocaSolimoes() {
     cardSolimoes.style.height = '150px'
@@ -1194,11 +1219,12 @@ function SelecionaSolimoes() {
         interuptor = true
     }
     interuptor1 = false
-
 }
 
 
-var cardTacutu = document.getElementById('Card_Tacutu')
+
+
+
 
 function mapBacias_ColocaTacutu() {
     cardTacutu.style.height = '150px'
@@ -1226,7 +1252,6 @@ function SelecionaTacutu() {
 
 }
 
-var cardTaubate = document.getElementById('Card_Taubate')
 
 function mapBacias_ColocaTaubate() {
     cardTaubate.style.height = '150px'
@@ -1254,7 +1279,6 @@ function SelecionaTaubate() {
 
 }
 
-var cardTucano = document.getElementById('Card_Tucano')
 
 function mapBacias_ColocaTucano() {
     cardTucano.style.height = '150px'
@@ -1281,3 +1305,4 @@ function SelecionaTucano() {
     interuptor1 = false
 
 }
+
