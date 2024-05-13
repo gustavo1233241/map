@@ -4,7 +4,7 @@ interuptor1 = true
 
 
 
-/* Ids dos cards*/ 
+/* Ids dos cards*/
 var cardAmazonas = document.getElementById('Card_Amazonas')
 var cardAcre = document.getElementById('Card_Acre')
 var cardAlto = document.getElementById('Card_Altotapajos')
@@ -54,7 +54,6 @@ var cards = [cardAmazonas, cardAcre, cardAlto, cardSolimoes, cardAlmada, cardAra
 
 
 
-let array = [cardAcre, cardAmazonas]
 /*Funcões dos cards */
 function mapBacias_ColocaAmazonas() {
     cardAmazonas.style.height = '150px'
@@ -63,24 +62,33 @@ function mapBacias_ColocaAmazonas() {
 function mapBacias_tiraAmazonas() {
 
     if (interuptor1)
-    cardAmazonas.style.display = 'none'
+        cardAmazonas.style.display = 'none'
     interuptor1 = true
 }
 
-// Variável para controlar o estado das divs
 
-
-// Função para fazer a div selecionada aparecer e as outras desaparecerem
 function SelecionaAmazonas() {
     if (interuptor) {
         cardAmazonas.style.display = 'block';
-        cardAcre.style.display = 'none';
+      
         interuptor = false;
     } else {
         cardAmazonas.style.display = 'none';
-        cardAcre.style.display = 'block';
+       
         interuptor = true;
     }
+
+    if (cards[0].style.display === 'block') {
+
+        for(let i = 0; i < cards.length ; i++){
+           
+            cards[i].style.display = 'none';
+       
+        }
+    }
+    
+    interuptor1 = false
+
 }
 
 
@@ -89,6 +97,7 @@ function SelecionaAmazonas() {
 
 
 function mapBacias_ColocaAcre() {
+
     cardAcre.style.height = '150px'
     cardAcre.style.display = 'block'
 }
@@ -101,22 +110,22 @@ function mapBacias_tiraAcre() {
 
 
 function SelecionaAcre() {
-  
-   
+
+
     if (interuptor) {
-     cards.innerHTML = ''
+
         cardAcre.style.display = 'block'
-        
+
         interuptor = false
 
     }
     else {
-        
+
         cardAcre.style.display = "none"
         interuptor = true
-        
+
     }
- 
+   
     interuptor1 = false
 
 
@@ -163,7 +172,7 @@ function mapBacias_ColocaAlmada() {
 function mapBacias_tiraAlmada() {
 
     if (interuptor1)
-    cardAlmada.style.display = 'none'
+        cardAlmada.style.display = 'none'
     interuptor1 = true
 }
 function SelecionaAlmada() {
@@ -192,7 +201,7 @@ function mapBacias_ColocaAraripe() {
 function mapBacias_tiraAraripe() {
 
     if (interuptor1)
-    cardAraripe.style.display = 'none'
+        cardAraripe.style.display = 'none'
     interuptor1 = true
 }
 function SelecionaAraripe() {
@@ -220,7 +229,7 @@ function mapBacias_ColocaBananal() {
 function mapBacias_tiraBananal() {
 
     if (interuptor1)
-    cardBananal.style.display = 'none'
+        cardBananal.style.display = 'none'
     interuptor1 = true
 }
 function SelecionaBananal() {
@@ -247,7 +256,7 @@ function mapBacias_ColocaBarreirinhas() {
 function mapBacias_tiraBarreirinhas() {
 
     if (interuptor1)
-    cardBarreirinhas.style.display = 'none'
+        cardBarreirinhas.style.display = 'none'
     interuptor1 = true
 }
 function SelecionaBarreinhas() {
@@ -274,7 +283,7 @@ function mapBacias_ColocaBarreirinhasT() {
 function mapBacias_tiraBarreirinhasT() {
 
     if (interuptor1)
-    cardBarreirinhasTerra.style.display = 'none'
+        cardBarreirinhasTerra.style.display = 'none'
     interuptor1 = true
 }
 function SelecionaBarreinhasT() {
@@ -303,7 +312,7 @@ function mapBacias_ColocaBraganca() {
 function mapBacias_tiraBraganca() {
 
     if (interuptor1)
-    cardBraganca.style.display = 'none'
+        cardBraganca.style.display = 'none'
     interuptor1 = true
 }
 function SelecionaBraganca() {
@@ -330,7 +339,7 @@ function mapBacias_ColocaCamamu() {
 function mapBacias_tiraCamamu() {
 
     if (interuptor1)
-    cardCamamu.style.display = 'none'
+        cardCamamu.style.display = 'none'
     interuptor1 = true
 }
 function SelecionaCamamu() {
@@ -358,7 +367,7 @@ function mapBacias_ColocaCampos() {
 function mapBacias_tiraCampos() {
 
     if (interuptor1)
-    cardCampos.style.display = 'none'
+        cardCampos.style.display = 'none'
     interuptor1 = true
 }
 function SelecionaCampos() {
@@ -386,7 +395,7 @@ function mapBacias_ColocaCamposT() {
 function mapBacias_tiraCamposT() {
 
     if (interuptor1)
-    cardCamposTerra.style.display = 'none'
+        cardCamposTerra.style.display = 'none'
     interuptor1 = true
 }
 function SelecionaCamposT() {
@@ -415,7 +424,7 @@ function mapBacias_ColocaCumuruxatiba() {
 function mapBacias_tiraCumuruxatiba() {
 
     if (interuptor1)
-    cardCumuruxatiba.style.display = 'none'
+        cardCumuruxatiba.style.display = 'none'
     interuptor1 = true
 }
 function SelecionaCumuruxatiba() {
@@ -444,7 +453,7 @@ function mapBacias_ColocaCeara() {
 function mapBacias_tiraCeara() {
 
     if (interuptor1)
-    cardCeara.style.display = 'none'
+        cardCeara.style.display = 'none'
     interuptor1 = true
 }
 function SelecionaCeara() {
@@ -471,7 +480,7 @@ function mapBacias_ColocaEspiritoSanto() {
 function mapBacias_tiraEspiritoSanto() {
 
     if (interuptor1)
-    cardEspiritoSanto.style.display = 'none'
+        cardEspiritoSanto.style.display = 'none'
     interuptor1 = true
 }
 function SelecionaEspiritoSanto() {
@@ -501,7 +510,7 @@ function mapBacias_ColocaEspiritoSantoT() {
 function mapBacias_tiraEspiritoSantoT() {
 
     if (interuptor1)
-    cardEspiritoSantoTerra.style.display = 'none'
+        cardEspiritoSantoTerra.style.display = 'none'
     interuptor1 = true
 }
 function SelecionaEspiritoSantoT() {
@@ -528,7 +537,7 @@ function mapBacias_ColocaFozAmazonas() {
 function mapBacias_tiraFozAmazonas() {
 
     if (interuptor1)
-    cardFozAmazonas.style.display = 'none'
+        cardFozAmazonas.style.display = 'none'
     interuptor1 = true
 }
 function SelecionaFozAmazonas() {
@@ -560,7 +569,7 @@ function mapBacias_ColocaItaborai() {
 function mapBacias_tiraItaborai() {
 
     if (interuptor1)
-    cardItaborai.style.display = 'none'
+        cardItaborai.style.display = 'none'
     interuptor1 = true
 }
 function SelecionaItaborai() {
@@ -590,7 +599,7 @@ function mapBacias_ColocaJatoba() {
 function mapBacias_tiraJatoba() {
 
     if (interuptor1)
-    cardJatoba.style.display = 'none'
+        cardJatoba.style.display = 'none'
     interuptor1 = true
 }
 function SelecionaJatoba() {
@@ -619,7 +628,7 @@ function mapBacias_ColocaJequitinhonha() {
 function mapBacias_tiraJequitinhonha() {
 
     if (interuptor1)
-    cardJequitinhonha.style.display = 'none'
+        cardJequitinhonha.style.display = 'none'
     interuptor1 = true
 }
 function SelecionaJequitinhonha() {
@@ -649,7 +658,7 @@ function mapBacias_ColocaJequitinhonhaT() {
 function mapBacias_tiraJequitinhonhaT() {
 
     if (interuptor1)
-    cardJequitinhonhaTerra.style.display = 'none'
+        cardJequitinhonhaTerra.style.display = 'none'
     interuptor1 = true
 }
 function SelecionaJequitinhonhaT() {
@@ -676,9 +685,9 @@ function mapBacias_ColocaMarajo() {
 }
 function mapBacias_tiraMarajo() {
 
-    if (interuptor1){
-    cardMarajo.style.display = 'none'
-    interuptor1 = true
+    if (interuptor1) {
+        cardMarajo.style.display = 'none'
+        interuptor1 = true
     }
 }
 function SelecionaMarajo() {
@@ -707,7 +716,7 @@ function mapBacias_ColocaMucuri() {
 function mapBacias_tiraMucuri() {
 
     if (interuptor1)
-    cardMucuri.style.display = 'none'
+        cardMucuri.style.display = 'none'
     interuptor1 = true
 }
 function SelecionaMucuri() {
@@ -734,7 +743,7 @@ function mapBacias_ColocaPantanal() {
 function mapBacias_tiraPantanal() {
 
     if (interuptor1)
-    cardPantanal.style.display = 'none'
+        cardPantanal.style.display = 'none'
     interuptor1 = true
 }
 function SelecionaPantanal() {
@@ -761,7 +770,7 @@ function mapBacias_ColocaParaMaranhao() {
 function mapBacias_tiraParaMaranhao() {
 
     if (interuptor1)
-    cardParaMaranhao.style.display = 'none'
+        cardParaMaranhao.style.display = 'none'
     interuptor1 = true
 }
 function SelecionaParaMaranhao() {
@@ -788,7 +797,7 @@ function mapBacias_ColocaParana() {
 function mapBacias_tiraParana() {
 
     if (interuptor1)
-    cardParana.style.display = 'none'
+        cardParana.style.display = 'none'
     interuptor1 = true
 }
 function SelecionaParana() {
@@ -815,7 +824,7 @@ function mapBacias_ColocaParecis() {
 function mapBacias_tiraParecis() {
 
     if (interuptor1)
-    cardParecis.style.display = 'none'
+        cardParecis.style.display = 'none'
     interuptor1 = true
 }
 function SelecionaParecis() {
@@ -841,7 +850,7 @@ function mapBacias_ColocaParnaiba() {
 function mapBacias_tiraParnaiba() {
 
     if (interuptor1)
-    cardParnaiba.style.display = 'none'
+        cardParnaiba.style.display = 'none'
     interuptor1 = true
 }
 function SelecionaParnaiba() {
@@ -867,7 +876,7 @@ function mapBacias_ColocaPelotas() {
 function mapBacias_tiraPelotas() {
 
     if (interuptor1)
-    cardPelotas.style.display = 'none'
+        cardPelotas.style.display = 'none'
     interuptor1 = true
 }
 function SelecionaPelotas() {
@@ -894,7 +903,7 @@ function mapBacias_ColocaPernambucoParaiba() {
 function mapBacias_tiraPernambucoParaiba() {
 
     if (interuptor1)
-    cardPernambucoParaiba.style.display = 'none'
+        cardPernambucoParaiba.style.display = 'none'
     interuptor1 = true
 }
 function SelecionaPernambucoParaiba() {
@@ -922,7 +931,7 @@ function mapBacias_ColocaPernambucoParaibaT() {
 function mapBacias_tiraPernambucoParaibaT() {
 
     if (interuptor1)
-    cardPernambucoParaibaTerra.style.display = 'none'
+        cardPernambucoParaibaTerra.style.display = 'none'
     interuptor1 = true
 }
 function SelecionaPernambucoParaibaT() {
@@ -950,7 +959,7 @@ function mapBacias_ColocaPotiguar() {
 function mapBacias_tiraPotiguar() {
 
     if (interuptor1)
-    cardPotiguar.style.display = 'none'
+        cardPotiguar.style.display = 'none'
     interuptor1 = true
 }
 function SelecionaPotiguar() {
@@ -978,7 +987,7 @@ function mapBacias_ColocaPotiguarT() {
 function mapBacias_tiraPotiguarT() {
 
     if (interuptor1)
-    cardPotiguarTerra.style.display = 'none'
+        cardPotiguarTerra.style.display = 'none'
     interuptor1 = true
 }
 function SelecionaPotiguarT() {
@@ -1006,7 +1015,7 @@ function mapBacias_ColocaReconcavo() {
 function mapBacias_tiraReconcavo() {
 
     if (interuptor1)
-    cardReconcavo.style.display = 'none'
+        cardReconcavo.style.display = 'none'
     interuptor1 = true
 }
 function SelecionaReconcavo() {
@@ -1035,7 +1044,7 @@ function mapBacias_ColocaSantos() {
 function mapBacias_tiraSantos() {
 
     if (interuptor1)
-    cardSantos.style.display = 'none'
+        cardSantos.style.display = 'none'
     interuptor1 = true
 }
 function SelecionaSantos() {
@@ -1063,7 +1072,7 @@ function mapBacias_ColocaSaoFrancisco() {
 function mapBacias_tiraSaoFrancisco() {
 
     if (interuptor1)
-    cardSaoFrancisco.style.display = 'none'
+        cardSaoFrancisco.style.display = 'none'
     interuptor1 = true
 }
 function SelecionaSaoFrancisco() {
@@ -1090,7 +1099,7 @@ function mapBacias_ColocaSaoLuis() {
 function mapBacias_tiraSaoLuis() {
 
     if (interuptor1)
-    cardSaoLuis.style.display = 'none'
+        cardSaoLuis.style.display = 'none'
     interuptor1 = true
 }
 function SelecionaSaoLuis() {
@@ -1117,7 +1126,7 @@ function mapBacias_ColocaSaoLuisGrajau() {
 function mapBacias_tiraSaoLuisGrajau() {
 
     if (interuptor1)
-    cardSaoLuisGrajau.style.display = 'none'
+        cardSaoLuisGrajau.style.display = 'none'
     interuptor1 = true
 }
 function SelecionaSaoLuisGrajau() {
@@ -1144,7 +1153,7 @@ function mapBacias_ColocaSergipeAlagoas() {
 function mapBacias_tiraSergipeAlagoas() {
 
     if (interuptor1)
-    cardSergipeAlagoas.style.display = 'none'
+        cardSergipeAlagoas.style.display = 'none'
     interuptor1 = true
 }
 function SelecionaSergipeAlagoas() {
@@ -1164,7 +1173,7 @@ function SelecionaSergipeAlagoas() {
 }
 
 
-var cardTacutu = document.getElementById('Card_Tacutu')
+
 
 function mapBacias_ColocaSergipeAlagoasT() {
     cardSergipeAlagoasTerra.style.height = '150px'
@@ -1173,7 +1182,7 @@ function mapBacias_ColocaSergipeAlagoasT() {
 function mapBacias_tiraSergipeAlagoasT() {
 
     if (interuptor1)
-    cardSergipeAlagoasTerra.style.display = 'none'
+        cardSergipeAlagoasTerra.style.display = 'none'
     interuptor1 = true
 }
 function SelecionaSergipeAlagoasT() {
@@ -1203,7 +1212,7 @@ function mapBacias_ColocaSolimoes() {
 function mapBacias_tiraSolimoes() {
 
     if (interuptor1)
-    cardSolimoes.style.display = 'none'
+        cardSolimoes.style.display = 'none'
     interuptor1 = true
 }
 function SelecionaSolimoes() {
@@ -1233,7 +1242,7 @@ function mapBacias_ColocaTacutu() {
 function mapBacias_tiraTacutu() {
 
     if (interuptor1)
-    cardTacutu.style.display = 'none'
+        cardTacutu.style.display = 'none'
     interuptor1 = true
 }
 function SelecionaTacutu() {
@@ -1260,7 +1269,7 @@ function mapBacias_ColocaTaubate() {
 function mapBacias_tiraTaubate() {
 
     if (interuptor1)
-    cardTaubate.style.display = 'none'
+        cardTaubate.style.display = 'none'
     interuptor1 = true
 }
 function SelecionaTaubate() {
@@ -1287,7 +1296,7 @@ function mapBacias_ColocaTucano() {
 function mapBacias_tiraTucano() {
 
     if (interuptor1)
-    cardTucano.style.display = 'none'
+        cardTucano.style.display = 'none'
     interuptor1 = true
 }
 function SelecionaTucano() {

@@ -56,7 +56,7 @@ function SelecionaAcre() {
         cardAcre.style.display = 'block'
         interuptor = false
 
-    }
+    }var cards = [cardAmazonas, cardAcre, cardAlto, cardSolimoes, cardAlmada, cardAraripe, cardBananal, cardBarreirinhas, cardBarreirinhasTerra, cardBraganca, cardCamamu, cardCampos, cardCamposTerra, cardCumuruxatiba, cardCeara, cardEspiritoSanto, cardEspiritoSantoTerra, cardFozAmazonas, cardItaborai, cardJatoba, cardJequitinhonha, cardJequitinhonhaTerra, cardMarajo, cardMucuri, cardPantanal, cardParaMaranhao, cardParana, cardParecis, cardParnaiba, cardPelotas, cardPernambucoParaiba, cardPotiguar, cardPotiguarTerra, cardReconcavo, cardSantos, cardSaoFrancisco, cardSaoLuis, cardSaoLuisGrajau, cardSergipeAlagoas, cardSergipeAlagoasTerra, cardTacutu, cardTaubate, cardTucano]
     else {
        
         cardAcre.style.display = "none"
